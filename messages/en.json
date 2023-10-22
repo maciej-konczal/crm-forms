@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Let's go!"
+  },
+  "navbar": {
+    "tab1": "First Tab",
+    "tab2": "Second Tab"
+  },
+  "footer": {
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "terms": "Terms"
+  }
+}

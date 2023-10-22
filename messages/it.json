@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Andiamo!"
+  },
+  "navbar": {
+    "tab1": "Prima Scheda",
+    "tab2": "Seconda Scheda"
+  },
+  "footer": {
+    "about": "Informazioni",
+    "blog": "Blog",
+    "contact": "Contatto",
+    "terms": "Termini"
+  }
+}

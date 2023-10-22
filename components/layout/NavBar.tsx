@@ -1,19 +1,25 @@
+"use client";
+
 import { Logo } from "../Logo";
+import { useTranslations } from "next-intl";
 
 export function NavBar() {
+  const t = useTranslations();
+
   const menuItems: {
     label: string;
     href: string;
   }[] = [
     {
-      label: "First tab",
+      label: t("navbar.tab1"),
       href: "/first",
     },
     {
-      label: "Second tab",
+      label: t("navbar.tab2"),
       href: "/second",
     },
   ];
+
   return (
     <nav
       className={`bg-background/80 fixed left-0 top-0 z-20 w-full backdrop-blur-lg`}

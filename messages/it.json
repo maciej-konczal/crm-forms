@@ -2,6 +2,17 @@
   "hero": {
     "title": "Andiamo!"
   },
+  "createConnectionForm": {
+    "title": "Crea connessione",
+    "fields": {
+      "targetSystem": "Sistema di destinazione",
+      "orgUrl": "Org Url",
+      "username": "Username",
+      "password": "Password",
+      "clientId": "Client Id",
+      "clientSecret": "Client Secret"
+    }
+  },
   "navbar": {
     "tab1": "Prima Scheda",
     "tab2": "Seconda Scheda"

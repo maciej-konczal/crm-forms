@@ -2,6 +2,17 @@
   "hero": {
     "title": "Let's go!"
   },
+  "createConnectionForm": {
+    "title": "Create Connection",
+    "fields": {
+      "targetSystem": "Target System",
+      "orgUrl": "Org Url",
+      "username": "Username",
+      "password": "Password",
+      "clientId": "Client Id",
+      "clientSecret": "Client Secret"
+    }
+  },
   "navbar": {
     "tab1": "First Tab",
     "tab2": "Second Tab"

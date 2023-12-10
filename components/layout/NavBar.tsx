@@ -21,33 +21,23 @@ export function NavBar() {
   ];
 
   return (
-    <nav
-      className={`bg-background/80 fixed left-0 top-0 z-20 w-full backdrop-blur-lg`}
-    >
-      <div className="container">
-        <div className="flex items-center justify-stretch gap-6 py-8">
-          <div className="flex flex-1 justify-start">
+    <nav className="flex items-center justify-between flex-wrap p-6">
+      <div className="flex items-center flex-shrink-0 mr-6">
+        <span className="font-semibold text-xl tracking-tight">
+          <Logo></Logo>
+        </span>
+      </div>
+      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div className="text-sm lg:flex-grow">
+          {menuItems.map((menuItem) => (
             <a
-              href="/"
-              className="block hover:no-underline active:no-underline"
+              key={menuItem.href}
+              // href={menuItem.href}
+              className="block mt-4 lg:inline-block lg:mt-0 hover:text-teal-200 mr-4"
             >
-              <Logo></Logo>
+              {menuItem.label}
             </a>
-          </div>
-
-          <div className="hidden flex-1 items-center justify-center md:flex">
-            {menuItems.map((menuItem) => (
-              <button
-                key={menuItem.href}
-                // href={menuItem.href}
-                className="block px-3 py-2 text-lg"
-              >
-                {menuItem.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="flex flex-1 items-center justify-end gap-3">TBD</div>
+          ))}
         </div>
       </div>
     </nav>

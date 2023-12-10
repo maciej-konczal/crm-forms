@@ -1,5 +1,7 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useTranslations } from "next-intl";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 type Inputs = {
   targetSystem: string;
@@ -18,7 +20,12 @@ export default function CreateConnectionForm() {
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    console.log(data);
+    toast(
+      "Wow so easy to add toast!\nInput data in JSON: " + JSON.stringify(data)
+    );
+  };
 
   return (
     <div className="w-full">
@@ -124,6 +131,7 @@ export default function CreateConnectionForm() {
           Submit
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 }

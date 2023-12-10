@@ -14,9 +14,7 @@ export default async function Index() {
   return (
     <div className="mb-12 pt-8 text-center">
       <div className="container max-w-6xl pb-24">
-        <h1 className="mb-2 text-5xl font-bold">
-          <Hero></Hero>
-        </h1>
+        <Hero></Hero>
       </div>
     </div>
   );
